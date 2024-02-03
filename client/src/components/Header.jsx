@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <Navbar className='border-b-2'>
         <Link to="/" className='self-center whitespace-nowrap text-sm:text-xl font-semibold dark:text-white'>
-            <span className='px-2 py-1 bg-gradient-to-r from-blue-500 via-cyan-400
-             to-green-500 rounded-lg text-black'>Elektronske novine</span>
+            <span className='px-2 py-1 bg-gradient-to-r from-blue-400 via-cyan-400
+             to-blue-400 rounded-lg text-black'>Elektronske novine</span>
         </Link>
         <form>
             <TextInput
