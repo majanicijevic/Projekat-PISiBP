@@ -1,10 +1,11 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import PocetnaStrana from './pages/PocetnaStrana'
-import SignIn from './pages/SignIn'
-import SignUp from './pages/SignUp'
-import KontrolnaTabla from './pages/KontrolnaTabla'
-import Header from './components/Header'
-import ONama from './pages/ONama'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import PocetnaStrana from './pages/PocetnaStrana';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import KontrolnaTabla from './pages/KontrolnaTabla';
+import Header from './components/Header';
+import ONama from './pages/ONama';
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route path='/kontrolna-tabla' element={<KontrolnaTabla />} />
         <Route path='/o-nama' element={<ONama />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
-  )
+  );
 }
