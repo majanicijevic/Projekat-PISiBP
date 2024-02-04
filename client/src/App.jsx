@@ -6,6 +6,7 @@ import KontrolnaTabla from './pages/KontrolnaTabla';
 import Header from './components/Header';
 import ONama from './pages/ONama';
 import Footer from './components/Footer';
+import PrivateRoute from './components/PrivateRoute';
 
 
 export default function App() {
@@ -16,7 +17,9 @@ export default function App() {
         <Route path='/' element={<PocetnaStrana />} />
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/kontrolna-tabla' element={<KontrolnaTabla />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/kontrolna-tabla' element={<KontrolnaTabla />} />
+        </Route>
         <Route path='/o-nama' element={<ONama />} />
       </Routes>
       <Footer />

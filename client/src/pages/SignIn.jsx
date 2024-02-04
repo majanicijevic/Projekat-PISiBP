@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { signInStart, signInSuccess, signInFailure} from '../redux/user/userSlice';
+import OAuth from '../components/OAuth';
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -53,7 +54,7 @@ export default function SignIn() {
               <Label value='Tvoja lozinka' />
               <TextInput type='password' placeholder='********' id='password' onChange={handleChange} />
             </div>
-            <Button color='gray' type='submit' disabled={loading} >
+            <Button gradientDuoTone='purpleToBlue' type='submit' disabled={loading} >
               {
                 loading ? (
                   <>
@@ -65,6 +66,7 @@ export default function SignIn() {
                 )
               }
             </Button>
+            <OAuth />
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Nemate profil?</span>
