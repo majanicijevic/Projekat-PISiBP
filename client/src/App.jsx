@@ -10,6 +10,7 @@ import PrivateRoute from './components/PrivateRoute';
 import OnlyNovinarPrivateRoute from './components/OnlyNovinarPrivateRoute';
 import CreatePost from './pages/CreatePost';
 import UpdatePost from './pages/UpdatePost';
+import PostPage from './pages/PostPage';
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
         <Route path='/o-nama' element={<ONama />} />
+        <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
