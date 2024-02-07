@@ -108,6 +108,7 @@ export default function CreatePost() {
             <option value='sport'>Sport</option>
             <option value='zabava'>Zabava</option>
             <option value='kultura'>Kultura</option>
+            <option value='tehnologija'>Tehnologija</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-purple-500 border-dotted p-3'>

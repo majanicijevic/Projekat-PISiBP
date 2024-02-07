@@ -1,5 +1,5 @@
 import { Sidebar } from 'flowbite-react';
-import { HiUser, HiArrowSmRight, HiDocumentText, HiOutlineUserGroup } from 'react-icons/hi';
+import { HiUser, HiArrowSmRight, HiDocumentText, HiOutlineUserGroup, HiAnnotation } from 'react-icons/hi';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { signoutSuccess } from '../redux/user/userSlice';
@@ -62,6 +62,7 @@ export default function DashSidebar() {
             </Link>
           )}
           {currentUser.isNovinar && (
+            <>
             <Link to='/kontrolna-tabla?tab=users'>
               <Sidebar.Item
                 active={tab === 'users'}
@@ -71,6 +72,16 @@ export default function DashSidebar() {
                 Korisnici
               </Sidebar.Item>
             </Link>
+            <Link to='/kontrolna-tabla?tab=comments'>
+              <Sidebar.Item
+                active={tab === 'comments'}
+                icon={HiAnnotation}
+                as='div'
+              >
+                Komentari
+              </Sidebar.Item>
+            </Link>
+          </>
           )}
           <Sidebar.Item
             icon={HiArrowSmRight}
