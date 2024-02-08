@@ -245,10 +245,10 @@ export default function DashProfile() {
         )}
       </form>
       <div className='text-red-500 flex justify-between mt-5'>
-      <span onClick={() => setShowModal(true)} className='cursor-pointer'>
+      <span onClick={() => setShowModal(true)} className='cursor-pointer hover:underline'>
           Obrisi profil
         </span>
-        <span onClick={handleSignout} className='cursor-pointer'>
+        <span onClick={handleSignout} className='cursor-pointer hover:underline'>
           Odjavite se
         </span>
       </div>

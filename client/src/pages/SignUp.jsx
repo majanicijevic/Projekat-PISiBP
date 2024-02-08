@@ -74,7 +74,7 @@ export default function SignUp() {
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Vec imate profil?</span>
-            <Link to='/sign-in' className='text-blue-800'>
+            <Link to='/sign-in' className='text-blue-800 hover:underline'>
               Prijavite se
             </Link>
           </div>

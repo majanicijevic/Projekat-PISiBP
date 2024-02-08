@@ -79,8 +79,6 @@ export default function DashComments() {
               <Table.HeadCell>Datum</Table.HeadCell>
               <Table.HeadCell>Sadrzaj komentara</Table.HeadCell>
               <Table.HeadCell>Broj svidjanja</Table.HeadCell>
-              <Table.HeadCell>ID vesti</Table.HeadCell>
-              <Table.HeadCell>ID korisnika</Table.HeadCell>
               <Table.HeadCell>Obrisi</Table.HeadCell>
             </Table.Head>
             {comments.map((comment) => (
@@ -91,8 +89,6 @@ export default function DashComments() {
                   </Table.Cell>
                   <Table.Cell>{comment.content}</Table.Cell>
                   <Table.Cell>{comment.numberOfLikes}</Table.Cell>
-                  <Table.Cell>{comment.postId}</Table.Cell>
-                  <Table.Cell>{comment.userId}</Table.Cell>
                   <Table.Cell>
                     <span
                       onClick={() => {
