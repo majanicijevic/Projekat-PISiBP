@@ -111,7 +111,7 @@ export default function CreatePost() {
             <option value='tehnologija'>Tehnologija</option>
           </Select>
         </div>
-        <div className='flex gap-4 items-center justify-between border-4 border-purple-500 border-dotted p-3'>
+        <div className='flex gap-4 items-center justify-between border-4 border-purple-500 border-dashed p-2'>
           <FileInput
             type='file'
             accept='image/*'

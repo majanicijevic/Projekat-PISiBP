@@ -104,25 +104,6 @@ export default function Search() {
     <div className='flex flex-col md:flex-row'>
       <div className='p-7 border-b md:border-r md:min-h-screen border-gray-500'>
         <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
-          <div className='flex   items-center gap-2'>
-            <label className='whitespace-nowrap font-semibold'>
-              Pretrazi:
-            </label>
-            <TextInput
-              placeholder='termin...'
-              id='searchTerm'
-              type='text'
-              value={sidebarData.searchTerm}
-              onChange={handleChange}
-            />
-          </div>
-          <div className='flex items-center gap-2'>
-            <label className='font-semibold'>Sortiraj:</label>
-            <Select onChange={handleChange} value={sidebarData.sort} id='sort'>
-              <option value='desc'>Najnovije</option>
-              <option value='asc'>Najstarije</option>
-            </Select>
-          </div>
           <div className='flex items-center gap-2'>
             <label className='font-semibold'>Kategorija:</label>
             <Select
@@ -140,7 +121,7 @@ export default function Search() {
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToBlue'>
-            Primeni filtere
+            Pogledaj kategoriju
           </Button>
         </form>
       </div>

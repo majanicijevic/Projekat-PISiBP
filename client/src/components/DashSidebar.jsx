@@ -1,5 +1,6 @@
 import { Sidebar } from 'flowbite-react';
-import { HiUser, HiArrowSmRight, HiDocumentText, HiOutlineUserGroup, HiAnnotation } from 'react-icons/hi';
+import { HiOutlineUserCircle, HiOutlineLogout, HiUserGroup, HiAnnotation } from 'react-icons/hi';
+import { HiDocumentText } from "react-icons/hi2";
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { signoutSuccess } from '../redux/user/userSlice';
@@ -42,7 +43,7 @@ export default function DashSidebar() {
           <Link to='/kontrolna-tabla?tab=profile'>
             <Sidebar.Item
               active={tab === 'profile'}
-              icon={HiUser}
+              icon={HiOutlineUserCircle}
               label={currentUser.isNovinar ? 'Novinar' : 'Korisnik'}
               labelColor='dark'
               as='div'
@@ -66,7 +67,7 @@ export default function DashSidebar() {
             <Link to='/kontrolna-tabla?tab=users'>
               <Sidebar.Item
                 active={tab === 'users'}
-                icon={HiOutlineUserGroup}
+                icon={HiUserGroup}
                 as='div'
               >
                 Korisnici
@@ -84,7 +85,7 @@ export default function DashSidebar() {
           </>
           )}
           <Sidebar.Item
-            icon={HiArrowSmRight}
+            icon={HiOutlineLogout}
             className='cursor-pointer'
             onClick={handleSignout}
           >
